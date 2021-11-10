@@ -57,9 +57,9 @@ p{
 }
 
 .pege-header{
+  display: flex;
   border-bottom: 1px solid #ECECEC;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  
 }
 
 /* Logo */
@@ -95,16 +95,20 @@ p{
 .current::after{
   position: absolute;
   left: 0;
+  bottom: 0;
   content:" ";
   display: block;
   width: 100%;
-  bottom: -33px;
   border-bottom: 4px solid var(--accent-color);
   border-radius: 4px;
 }
 
-.site-nav .link,
+
+.site-nav .link ,
 .contact-list .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 31px;
   color: var(--primery-text-color);
   font-weight: 500;
   line-height: 1.17;
